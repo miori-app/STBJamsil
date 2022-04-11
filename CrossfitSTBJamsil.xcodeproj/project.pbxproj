@@ -13,6 +13,12 @@
 		3D1E023F28009958009345E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1E023D28009958009345E7 /* Main.storyboard */; };
 		3D1E024128009959009345E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1E024028009959009345E7 /* Assets.xcassets */; };
 		3D1E024428009959009345E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1E024228009959009345E7 /* LaunchScreen.storyboard */; };
+		3D1E024D2800A1A0009345E7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1E024C2800A1A0009345E7 /* SnapKit */; };
+		3D1E02502800A1B7009345E7 /* ReservationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E024F2800A1B7009345E7 /* ReservationListView.swift */; };
+		3D1E02522800A32A009345E7 /* ReservationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E02512800A32A009345E7 /* ReservationListCell.swift */; };
+		3D1E02552800A505009345E7 /* ClassTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E02542800A505009345E7 /* ClassTimeModel.swift */; };
+		3D1E02572800A6DD009345E7 /* ReservationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E02562800A6DD009345E7 /* ReservationListVC.swift */; };
+		3D1E025A2800AC28009345E7 /* ReservationListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E02592800AC28009345E7 /* ReservationListCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		3D1E024028009959009345E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D1E024328009959009345E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1E024528009959009345E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1E024F2800A1B7009345E7 /* ReservationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListView.swift; sourceTree = "<group>"; };
+		3D1E02512800A32A009345E7 /* ReservationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListCell.swift; sourceTree = "<group>"; };
+		3D1E02542800A505009345E7 /* ClassTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTimeModel.swift; sourceTree = "<group>"; };
+		3D1E02562800A6DD009345E7 /* ReservationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListVC.swift; sourceTree = "<group>"; };
+		3D1E02592800AC28009345E7 /* ReservationListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1E024D2800A1A0009345E7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,9 @@
 		3D1E023628009958009345E7 /* CrossfitSTBJamsil */ = {
 			isa = PBXGroup;
 			children = (
+				3D1E02582800AC0F009345E7 /* ViewModel */,
+				3D1E02532800A4F7009345E7 /* Model */,
+				3D1E024E2800A1A6009345E7 /* View */,
 				3D1E023728009958009345E7 /* AppDelegate.swift */,
 				3D1E023928009958009345E7 /* SceneDelegate.swift */,
 				3D1E023B28009958009345E7 /* ViewController.swift */,
@@ -65,6 +80,32 @@
 				3D1E024528009959009345E7 /* Info.plist */,
 			);
 			path = CrossfitSTBJamsil;
+			sourceTree = "<group>";
+		};
+		3D1E024E2800A1A6009345E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D1E024F2800A1B7009345E7 /* ReservationListView.swift */,
+				3D1E02512800A32A009345E7 /* ReservationListCell.swift */,
+				3D1E02562800A6DD009345E7 /* ReservationListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D1E02532800A4F7009345E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D1E02542800A505009345E7 /* ClassTimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D1E02582800AC0F009345E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D1E02592800AC28009345E7 /* ReservationListCellModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,9 @@
 			dependencies = (
 			);
 			name = CrossfitSTBJamsil;
+			packageProductDependencies = (
+				3D1E024C2800A1A0009345E7 /* SnapKit */,
+			);
 			productName = CrossfitSTBJamsil;
 			productReference = 3D1E023428009958009345E7 /* CrossfitSTBJamsil.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 3D1E022B28009958009345E7;
+			packageReferences = (
+				3D1E024B2800A1A0009345E7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3D1E023528009958009345E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1E025A2800AC28009345E7 /* ReservationListCellModel.swift in Sources */,
 				3D1E023C28009958009345E7 /* ViewController.swift in Sources */,
+				3D1E02552800A505009345E7 /* ClassTimeModel.swift in Sources */,
+				3D1E02572800A6DD009345E7 /* ReservationListVC.swift in Sources */,
+				3D1E02502800A1B7009345E7 /* ReservationListView.swift in Sources */,
 				3D1E023828009958009345E7 /* AppDelegate.swift in Sources */,
+				3D1E02522800A32A009345E7 /* ReservationListCell.swift in Sources */,
 				3D1E023A28009958009345E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +344,9 @@
 				INFOPLIST_FILE = CrossfitSTBJamsil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +372,9 @@
 				INFOPLIST_FILE = CrossfitSTBJamsil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D1E024B2800A1A0009345E7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D1E024C2800A1A0009345E7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D1E024B2800A1A0009345E7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D1E022C28009958009345E7 /* Project object */;
 }
